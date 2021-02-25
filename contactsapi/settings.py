@@ -99,12 +99,9 @@ WSGI_APPLICATION = 'contactsapi.wsgi.application'
 
 DATABASES = {
    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'contactapi',
-        'HOST': '127.0.0.1',
-        'PORT': '3306',
-        'USER': 'spicywords',
-        'PASSWORD': 'Harbeedeymee_123',
+        'ENGINE': 'django.db.backends.mysqlite',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3')
+     
     }
 }
 
